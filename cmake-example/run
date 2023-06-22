@@ -1,3 +1,7 @@
+mv CMakeLists CMakeLists.txt
+mv calcApp/CMakeLists calcApp/CMakeLists.txt
+mv calcLib/CMakeLists calcLib/CMakeLists.txt
+
 if [ -d build/ ]; then
   rm -r build/
 fi
