@@ -1,0 +1,19 @@
+mv CMakeLists CMakeLists.txt
+mv main/CMakeLists main/CMakeLists.txt
+mv nlohmann/CMakeLists nlohmann/CMakeLists.txt
+
+if [ -d build/ ]; then
+  rm -r build/
+fi
+
+mkdir build
+cd build
+cmake ..
+make
+
+cd ..
+mv CMakeLists.txt CMakeLists
+mv main/CMakeLists.txt main/CMakeLists
+mv nlohmann/CMakeLists.txt nlohmann/CMakeLists
+
+./build/main/main
