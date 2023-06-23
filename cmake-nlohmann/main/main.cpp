@@ -1,7 +1,8 @@
 #include <iostream>
-#include <nlohmann/json.hpp>
+#include "Element.cpp"
 
 int main() {
-    std::cout << "Done" << std::endl;
+    Element element("1");
+    std::cout << element.toJsonString() << std::endl;
     return 0;
 }
