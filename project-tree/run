@@ -1,0 +1,17 @@
+mv CMakeLists CMakeLists.txt
+mv lib/incrementLib/CMakeLists lib/incrementLib/CMakeLists.txt
+
+if [ -d build/ ]; then
+  rm -r build/
+fi
+
+mkdir build
+cd build
+cmake ..
+make
+
+cd ..
+mv CMakeLists.txt CMakeLists
+mv lib/incrementLib/CMakeLists.txt lib/incrementLib/CMakeLists
+
+./build/main
