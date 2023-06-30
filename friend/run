@@ -1,0 +1,2 @@
+g++ main.cpp MyClass.cpp FriendClass.cpp -o main
+./main
