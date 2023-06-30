@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Processor.cpp"
+#include "Processor.h"
 #include "IncrementLib.h"
 
 int main() {
